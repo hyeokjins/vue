@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <SimpleCompVue></SimpleCompVue>
-    <HelloWorld msg="!Welcome to Your Vue.js App"/>
+    <router-link to="/">Go to Home</router-link> |
+    <router-link to="/login">Go to Login</router-link> |
+    <router-view ></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import SimpleCompVue from './components/SimpleComp.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    SimpleCompVue
-    }
+
+     }
 }
 </script>
 
