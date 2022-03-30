@@ -1,18 +1,13 @@
 <template>
   <div>
-    <ul>
-      <li><router-link to="/">Main</router-link></li>
-      <li><router-link to="/login">Login</router-link></li>
-      <li><router-link to="/profile">Profile</router-link></li>
-    </ul>
+    <h2>Main Page</h2>
   </div>
 </template>
 
-
 <script>
 export default {
-  data(){
-    return {}
-  }
-}
+  data() {
+    return {};
+  },
+};
 </script>
