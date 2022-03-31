@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   setup() {
@@ -62,29 +62,25 @@ export default {
     function post() {
       const data = {
         id: 20,
-        name: "hello"
-      }
-      axios
-        .post("http://localhost:4000/api/user", data)
-        .then((response) => {
-          showResult(response.data);
-        });
+        name: "hello",
+      };
+      axios.post("http://localhost:4000/api/user", data).then((response) => {
+        showResult(response.data);
+      });
     }
 
     async function put() {
       const data = {
         id: 1,
-        name: "world"
+        name: "world",
       };
-      const result = await axios
-        .put("http://localhost:4000/api/user", data);
+      const result = await axios.put("http://localhost:4000/api/user", data);
       showResult(result.data);
     }
 
     async function del() {
       try {
-        const result = await axios
-          .delete("http://localhost:4000/api/user");
+        const result = await axios.delete("http://localhost:4000/api/user");
         showResult(result.data);
       } catch (error) {
         showResult(error);
@@ -93,24 +89,26 @@ export default {
 
     async function upload() {
       try {
-        const form = document.getElementById('uploadForm');
+        const form = document.getElementById("uploadForm");
         const formData = new FormData(form);
-        const result = await axios.post("http://localhost:4000/api/upload", formData,
+        const result = await axios.post(
+          "http://localhost:4000/api/upload",
+          formData,
           {
             headers: {
-              'Content-Type': 'multipart/form-data'
-            }
-          });
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
         showResult(result.data);
       } catch (error) {
         showResult(error);
       }
     }
 
-    return { get, post, put, del, upload }
-  }
-}
-
+    return { get, post, put, del, upload };
+  },
+};
 </script>
 
 <style>
