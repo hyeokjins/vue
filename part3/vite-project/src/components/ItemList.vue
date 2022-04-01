@@ -1,5 +1,6 @@
 <template>
   <button @click="loadData">Load</button>
+  <hr><h1>CI/CD</h1><hr>
   <ul>
     <li v-for="(name, idx) in names" :key="idx">
       {{ name }}
