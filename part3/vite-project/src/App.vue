@@ -1,11 +1,11 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import JsonList from './components/JsonList.vue';
+import ItemList from './components/ItemList.vue';
 </script>
 
 <template>
-  <JsonList></JsonList>
+  <ItemList></ItemList>
 </template>
 
 <style>
