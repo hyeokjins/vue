@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button @click="get">Load</button>
+    <button @click="get">Load DATA</button>
 
-    <h2>gettttt</h2>
+    <h2>CI/CD</h2>
   </div>
   <div>
     <ul>
